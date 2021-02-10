@@ -423,7 +423,11 @@ nav {
   .pick-trip__content .trip_images {
     z-index: 99; }
     .pick-trip__content .trip_images .trip_img {
-      margin-right: 100px; }
+      margin-right: 100px;
+      width: 430px;
+      height: 550px;
+      background-color: gray;
+      border-radius: 9px; }
       .pick-trip__content .trip_images .trip_img img {
         border-radius: 9px;
         width: 100%;

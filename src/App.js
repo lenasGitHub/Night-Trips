@@ -22,9 +22,9 @@ function App() {
           <meta property="og:description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
 
 
-          <link href={'https://agitated-goldstine-b36048.netlify.app'} rel='canonical' /> : ''}
-          <meta property='twitter:url' content={'https://agitated-goldstine-b36048.netlify.app'} />
-          <meta property='og:url' content={'https://agitated-goldstine-b36048.netlify.app'} />
+          <link href={'https://xenodochial-spence-d9901e.netlify.app/'} rel='canonical' /> : ''}
+          <meta property='twitter:url' content={'https://xenodochial-spence-d9901e.netlify.app/'} />
+          <meta property='og:url' content={'https://xenodochial-spence-d9901e.netlify.app/'} />
 
           <meta property='og:image' content='/assets/images/nigth-trips.png'/>
           <meta property='twitter:image' content='/assets/images/nigth-trips.png'/>
