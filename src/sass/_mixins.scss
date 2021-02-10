@@ -83,7 +83,7 @@
         @media (max-width: 1024px) { @content; }
     }
     @else if $point == mobile {
-        @media (max-width: 650px) { @content; }
+        @media (max-width: 670px) { @content; }
     }
     @else{
         @media (max-width: $point) { @content; }

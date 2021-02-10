@@ -11,6 +11,8 @@
       color: #021727;
     }
     &--with-stoke{
+
+      transition: all 10s cubic-bezier(0.890, -0.170, 0.140, 1.225);
       &:after{
         content: "";
         position: absolute;
@@ -22,10 +24,20 @@
         top: 50%;
         display: block;
       }
+      &:hover:after{
+        right: -10px;
+        width: 35px;
+      }
     }
   }
 }
 
 .menu__button{
   margin-left: 20px;
+
+  @include breakpoint(mobile){
+    &:after{
+      display: none;
+    }
+  }
 }

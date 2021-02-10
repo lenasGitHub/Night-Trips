@@ -120,6 +120,9 @@ body{
     &--flex{
         display: flex;
         align-items: center;
+        @include breakpoint(mobile){
+           flex-direction: column
+        }
     }
     &--flex-center{
         display: flex;

@@ -11,10 +11,15 @@
 }
 
 %absolute-middle {
+    margin: 0;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 %absolute-bottom {
     position: absolute;

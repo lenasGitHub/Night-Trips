@@ -4,6 +4,16 @@
   right: 0;
   margin: auto; }
 
+.night-trip__title {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media (max-width: 670px) {
+    .night-trip__title {
+      width: 100%; } }
+
 .night-trip__social, .night-trip__scroll, .trip_text__social {
   position: absolute;
   bottom: 0;
@@ -35,19 +45,27 @@ header .night-trip__banner--bg-image {
   position: relative; }
   .night-trip__button--block {
     color: #021727; }
-  .night-trip__button--with-stoke:after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    right: -16px;
-    top: 50%;
-    display: block; }
+  .night-trip__button--with-stoke {
+    transition: all 10s cubic-bezier(0.89, -0.17, 0.14, 1.225); }
+    .night-trip__button--with-stoke:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      right: -16px;
+      top: 50%;
+      display: block; }
+    .night-trip__button--with-stoke:hover:after {
+      right: -10px;
+      width: 35px; }
 
 .menu__button {
   margin-left: 20px; }
+  @media (max-width: 670px) {
+    .menu__button:after {
+      display: none; } }
 
 html {
   font-size: 10px; }
@@ -160,6 +178,9 @@ body {
   .container--flex {
     display: flex;
     align-items: center; }
+    @media (max-width: 670px) {
+      .container--flex {
+        flex-direction: column; } }
   .container--flex-center {
     display: flex;
     justify-content: space-between;
@@ -177,7 +198,7 @@ body {
 .show-mobile {
   display: none !important; }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
   .show-mobile {
     display: block !important; }
   .show-desktop {
@@ -191,17 +212,9 @@ body {
 header .night-trip__banner--bg-image {
   color: #fff;
   height: 80vh; }
-
-header .line {
-  background-color: #00aaaa;
-  width: 100%;
-  height: 4px; }
-
-header .upper {
-  clear: both;
-  padding-top: 22px;
-  width: 100%;
-  float: left; }
+  @media (max-width: 670px) {
+    header .night-trip__banner--bg-image {
+      height: 100vh; } }
 
 header .logo {
   width: 295px;
@@ -218,25 +231,6 @@ header .nav {
   header .nav a {
     display: inline-block;
     float: right; }
-  header .nav .shipping {
-    margin-top: 10px;
-    padding-left: 30px;
-    background-size: auto 20px;
-    line-height: 20px; }
-  header .nav .blog {
-    margin-top: 10px;
-    margin-left: 30px;
-    padding-left: 30px;
-    background-size: auto 20px;
-    line-height: 20px; }
-  header .nav .login {
-    margin-left: 20px;
-    color: #00aaaa;
-    padding: 0 19px;
-    line-height: 40px;
-    background-color: #26282c;
-    border: #4a4a4a 1px solid;
-    display: inline-block; }
 
 header .bottom {
   clear: both;
@@ -245,32 +239,12 @@ header .bottom {
   margin-bottom: 30px;
   float: left; }
 
-header .select {
-  float: left;
-  width: 203px;
-  height: 55px;
-  position: relative;
-  margin: 0;
-  padding: 0; }
-  header .select:after {
-    content: '';
-    width: 6px;
-    height: 12px;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 10;
-    background-size: 6px 12px;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
-
 nav {
-  position: absolute;
   width: 100%;
-  margin: 45px 0; }
+  padding: 45px 0; }
+  @media (max-width: 670px) {
+    nav {
+      padding: 35px 0; } }
   nav .night-trip__logo {
     font-size: 36px;
     color: #fff;
@@ -295,11 +269,15 @@ nav {
   flex-direction: column;
   right: 0; }
   .night-trip__social svg {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    cursor: pointer; }
 
 .night-trip__scroll {
   left: 0;
   bottom: 64px; }
+  @media (max-width: 670px) {
+    .night-trip__scroll {
+      display: none; } }
   .night-trip__scroll > span {
     font-size: 15px;
     letter-spacing: 3px;
@@ -321,6 +299,9 @@ nav {
 
 .trip_text__social {
   right: 0; }
+  @media (max-width: 670px) {
+    .trip_text__social {
+      display: none; } }
   .trip_text__social .social__share-text {
     font-size: 15px;
     line-height: 150%;
@@ -345,7 +326,8 @@ nav {
       height: 31px;
       right: -15px; }
     .trip_text__social .social__share-icons svg {
-      margin-right: 20px; }
+      margin-right: 20px;
+      cursor: pointer; }
       .trip_text__social .social__share-icons svg:last-child {
         margin: 0; }
 
@@ -357,8 +339,22 @@ nav {
   text-align: center; }
 
 .night-trip__title h1 {
-  font-size: 60px;
-  margin: 0 0 10px; }
+  font-size: 120px;
+  line-height: 153px; }
+  @media (max-width: 1024px) {
+    .night-trip__title h1 {
+      font-size: 50px; } }
+
+.night-trip__title h1, .night-trip__title h2 {
+  margin-bottom: 20px; }
+
+.night-trip__title h2 {
+  font-size: 18px; }
+
+.night-trip__title p {
+  font-size: 17px;
+  margin-top: 30px;
+  line-height: 1.6; }
 
 .night-trip__pick-section {
   background-color: #011627;
@@ -366,10 +362,22 @@ nav {
   .night-trip__pick-section h3 {
     font-size: 72px;
     margin-right: 20px; }
+    @media (max-width: 670px) {
+      .night-trip__pick-section h3 {
+        font-size: 40px;
+        margin: 0 0 20px; } }
+    @media (max-width: 1024px) {
+      .night-trip__pick-section h3 {
+        font-size: 35px; } }
   .night-trip__pick-section p.trip-pick-text {
     font-size: 16px;
     margin: 0 20px 0 30px;
     max-width: 350px; }
+    @media (max-width: 670px) {
+      .night-trip__pick-section p.trip-pick-text {
+        max-width: 350px;
+        text-align: center;
+        margin: 15px auto; } }
   .night-trip__pick-section h3, .night-trip__pick-section p {
     color: #fff; }
 
@@ -380,13 +388,25 @@ nav {
   width: 100%;
   border-bottom: 1px solid #41ead466;
   margin-bottom: 80px; }
+  @media (max-width: 670px) {
+    .pick-trip__list {
+      margin-bottom: 0;
+      -webkit-box-align: center !important;
+      display: flex !important;
+      align-items: center !important;
+      overflow: auto !important;
+      scroll-snap-type: x mandatory !important; } }
   .pick-trip__list li {
     font-size: 16px;
     text-align: center;
     color: #fff;
     opacity: 0.5;
     position: relative;
-    padding: 20px; }
+    padding: 20px;
+    cursor: pointer; }
+    @media (max-width: 670px) {
+      .pick-trip__list li {
+        min-width: 150px; } }
     .pick-trip__list li.active:after {
       content: "";
       display: block;
@@ -403,12 +423,21 @@ nav {
   padding: 15px 0;
   display: flex;
   position: relative; }
+  @media (max-width: 670px) {
+    .pick-trip__content {
+      flex-direction: column-reverse; } }
   .pick-trip__content h4, .pick-trip__content p {
     color: #fff;
     margin-bottom: 40px; }
+    @media (max-width: 670px) {
+      .pick-trip__content h4, .pick-trip__content p {
+        margin-bottom: 30px; } }
   .pick-trip__content h4 {
     font-size: 65px;
     line-height: 1; }
+    @media (max-width: 1024px) {
+      .pick-trip__content h4 {
+        font-size: 48px; } }
   .pick-trip__content p {
     font-size: 17px;
     line-height: 1.6; }
@@ -416,18 +445,50 @@ nav {
     position: absolute;
     bottom: -39px;
     left: -52px; }
+    @media (max-width: 670px) {
+      .pick-trip__content svg.dots {
+        display: none; } }
   .pick-trip__content .trip_text {
     flex: 48%;
     max-width: 48%;
     position: relative; }
+    @media (max-width: 670px) {
+      .pick-trip__content .trip_text {
+        flex: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px; } }
   .pick-trip__content .trip_images {
-    z-index: 99; }
+    z-index: 99;
+    position: relative; }
+    @media (max-width: 670px) {
+      .pick-trip__content .trip_images {
+        max-width: 440px;
+        margin: auto; } }
     .pick-trip__content .trip_images .trip_img {
       margin-right: 100px;
       min-width: 430px;
-      min-height: 550px;
+      min-height: 520px;
       background-color: gray;
       border-radius: 9px; }
+      @media (max-width: 1024px) {
+        .pick-trip__content .trip_images .trip_img {
+          min-width: unset;
+          min-height: unset;
+          max-width: 260px;
+          margin-right: 50px; } }
+      @media (max-width: 670px) {
+        .pick-trip__content .trip_images .trip_img {
+          min-width: 350px;
+          min-height: 100%;
+          max-width: 350px;
+          margin: auto;
+          display: block;
+          overflow: hidden; } }
       .pick-trip__content .trip_images .trip_img img {
         border-radius: 9px;
         width: 100%;
@@ -436,6 +497,9 @@ nav {
       position: absolute;
       top: 40%;
       left: -3%; }
+      @media (max-width: 670px) {
+        .pick-trip__content .trip_images .trip_img-title {
+          left: -10%; } }
     .pick-trip__content .trip_images .trip_num {
       font-size: 24px;
       color: #41EAD4;

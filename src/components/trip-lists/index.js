@@ -76,7 +76,7 @@ TripLists.defaultProps = {
             title: 'Chill Adventure1',
             desc: 'Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat\n' +
                 '                            id fringilla arcu condimentum fames.1',
-            image: 'trip-s1-min.png'
+            image: 'trip-s2-min.png'
         },
         {
             id: 2,
@@ -84,7 +84,7 @@ TripLists.defaultProps = {
             title: 'Chill Adventure2',
             desc: 'Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat\n' +
                 '                            id fringilla arcu condimentum fames.2',
-            image: 'trip-s2-min.png'
+            image: 'trip-s1-min.png'
         },
         {
             id: 3,

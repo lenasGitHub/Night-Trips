@@ -4,11 +4,12 @@
 // --------------------------------------------------
 
 nav{
-  position: absolute;
   width: 100%;
-  margin: 45px 0;
+  padding: 45px 0;
 
-
+  @include breakpoint(mobile){
+    padding: 35px 0;
+  }
   .night-trip{
     &__logo {
       font-size: 36px;
