@@ -1,0 +1,31 @@
+.night-trip{
+  &__button{
+    @extend %button-primary;
+    padding: 14px 30px;
+    min-width: 125px;
+
+    position: relative;
+
+
+    &--block{
+      color: #021727;
+    }
+    &--with-stoke{
+      &:after{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        right: -16px;
+        top: 50%;
+        display: block;
+      }
+    }
+  }
+}
+
+.menu__button{
+  margin-left: 20px;
+}

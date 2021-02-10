@@ -1,0 +1,32 @@
+// Compass mixins
+
+// Variables and mixins
+@import "sass/variables";
+@import "sass/mixins";
+
+
+// @font-face embeds
+@import "sass/fonts";
+
+// Classes to @extend
+@import "sass/extends";
+
+
+// Typography
+@import "sass/typography";
+
+
+// Utility classes
+//@import "sass/animation"; // CSS3 Keyframe animations
+
+// Structure
+@import "sass/scaffolding";
+@import "sass/components/header";
+@import "sass/components/footer";
+@import "sass/components/nav";
+@import "sass/components/breadcrumb";
+@import "sass/components/common";
+@import "sass/components/social";
+
+// Pages
+@import "sass/pages/home";

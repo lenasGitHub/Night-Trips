@@ -1,0 +1,35 @@
+
+//
+// Navigation
+// --------------------------------------------------
+
+nav{
+  position: absolute;
+  width: 100%;
+  margin: 45px 0;
+
+
+  .night-trip{
+    &__logo {
+      font-size: 36px;
+      color: #fff;
+      position: relative;
+      font-family: "Noe Display Bold";
+      &:after{
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: $primaryColor;
+        display: block;
+        position: absolute;
+        bottom: 13px;
+        right: -8px;
+        border-radius: 50%
+      }
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

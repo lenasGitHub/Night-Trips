@@ -1,0 +1,456 @@
+#overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.night-trip__social, .night-trip__scroll, .trip_text__social {
+  position: absolute;
+  bottom: 0;
+  margin: auto; }
+
+.night-trip__scroll > span:after, .trip_text__social .social__share-icons:after, .trip_text__social .social__share-icons:before, .pick-trip__content .trip_images .trip_num:after, .pick-trip__content .trip_images .trip_num:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 13px; }
+
+header .night-trip__banner--bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center center; }
+
+.night-trip__button {
+  background: #00C9E0;
+  border: 1px solid #00C9E0;
+  color: #fff;
+  box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+  font-size: 16px;
+  border-radius: 9999px; }
+
+.night-trip__button {
+  padding: 14px 30px;
+  min-width: 125px;
+  position: relative; }
+  .night-trip__button--block {
+    color: #021727; }
+  .night-trip__button--with-stoke:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    right: -16px;
+    top: 50%;
+    display: block; }
+
+.menu__button {
+  margin-left: 20px; }
+
+html {
+  font-size: 10px; }
+  @media (max-width: 1134px) {
+    html {
+      font-size: 9px; } }
+  @media (max-width: 1008px) {
+    html {
+      font-size: 8px; } }
+  @media (max-width: 882px) {
+    html {
+      font-size: 7px; } }
+  @media (max-width: 756px) {
+    html {
+      font-size: 6px; } }
+  @media (max-width: 640px) {
+    html {
+      font-size: 5px; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 4px; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+*:focus {
+  outline: none; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+a, div, img, button {
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+input, textarea, select, button, p, div, img, a {
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none; }
+
+strong, b {
+  font-weight: normal; }
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noe Display Bold";
+  margin: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.clear {
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+.hide {
+  display: none; }
+
+button {
+  border: 0;
+  cursor: pointer; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Larsseit", Gill Sans, Times, TimesNewRoman, "Times New Roman", Baskerville, Georgia, serif;
+  -webkit-text-size-adjust: none;
+  position: relative;
+  color: #2a2a2a; }
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  opacity: 0.8;
+  display: none; }
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .container--flex {
+    display: flex;
+    align-items: center; }
+  .container--flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .container--flex--column {
+    flex-direction: column; }
+
+.main {
+  width: 100%;
+  float: left; }
+
+.page {
+  min-height: calc(100vh - 194px - 346px); }
+
+.show-mobile {
+  display: none !important; }
+
+@media (max-width: 650px) {
+  .show-mobile {
+    display: block !important; }
+  .show-desktop {
+    display: none !important; } }
+
+.bg-gradient {
+  background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 40.64%, #011627 100%);
+  margin-top: -45px;
+  height: 100px; }
+
+header .night-trip__banner--bg-image {
+  color: #fff;
+  height: 80vh; }
+
+header .line {
+  background-color: #00aaaa;
+  width: 100%;
+  height: 4px; }
+
+header .upper {
+  clear: both;
+  padding-top: 22px;
+  width: 100%;
+  float: left; }
+
+header .logo {
+  width: 295px;
+  height: 60px;
+  background-size: 100% auto;
+  float: left;
+  display: block; }
+
+header .nav {
+  float: right;
+  font-size: 14.62px;
+  margin-top: 13px;
+  width: auto; }
+  header .nav a {
+    display: inline-block;
+    float: right; }
+  header .nav .shipping {
+    margin-top: 10px;
+    padding-left: 30px;
+    background-size: auto 20px;
+    line-height: 20px; }
+  header .nav .blog {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 30px;
+    background-size: auto 20px;
+    line-height: 20px; }
+  header .nav .login {
+    margin-left: 20px;
+    color: #00aaaa;
+    padding: 0 19px;
+    line-height: 40px;
+    background-color: #26282c;
+    border: #4a4a4a 1px solid;
+    display: inline-block; }
+
+header .bottom {
+  clear: both;
+  width: 100%;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  float: left; }
+
+header .select {
+  float: left;
+  width: 203px;
+  height: 55px;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  header .select:after {
+    content: '';
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    background-size: 6px 12px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+nav {
+  position: absolute;
+  width: 100%;
+  margin: 45px 0; }
+  nav .night-trip__logo {
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+    font-family: "Noe Display Bold"; }
+    nav .night-trip__logo:after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: #00C9E0;
+      display: block;
+      position: absolute;
+      bottom: 13px;
+      right: -8px;
+      border-radius: 50%; }
+  nav .night-trip__menu {
+    display: flex;
+    align-items: center; }
+
+.night-trip__social {
+  display: flex;
+  flex-direction: column;
+  right: 0; }
+  .night-trip__social svg {
+    margin-bottom: 15px; }
+
+.night-trip__scroll {
+  left: 0;
+  bottom: 64px; }
+  .night-trip__scroll > span {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #fff;
+    opacity: 0.9;
+    transform: rotate(-90deg);
+    position: relative;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .night-trip__scroll > span:after {
+      background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+      width: 2px;
+      height: 80px;
+      border-radius: 13px;
+      transform: rotate(90deg);
+      left: 46px; }
+
+.trip_text__social {
+  right: 0; }
+  .trip_text__social .social__share-text {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    justify-content: flex-start; }
+  .trip_text__social .social__share-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .trip_text__social .social__share-icons:after, .trip_text__social .social__share-icons:before {
+      bottom: -14px;
+      background: #41EAD4; }
+    .trip_text__social .social__share-icons:after {
+      width: 115px;
+      height: 2px;
+      left: 4px; }
+    .trip_text__social .social__share-icons:before {
+      width: 2px;
+      height: 31px;
+      right: -15px; }
+    .trip_text__social .social__share-icons svg {
+      margin-right: 20px; }
+      .trip_text__social .social__share-icons svg:last-child {
+        margin: 0; }
+
+.night-trip__title-flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.night-trip__title h1 {
+  font-size: 60px;
+  margin: 0 0 10px; }
+
+.night-trip__pick-section {
+  background-color: #011627;
+  padding: 3rem 0; }
+  .night-trip__pick-section h3 {
+    font-size: 72px;
+    margin-right: 20px; }
+  .night-trip__pick-section p.trip-pick-text {
+    font-size: 16px;
+    margin: 0 20px 0 30px;
+    max-width: 350px; }
+  .night-trip__pick-section h3, .night-trip__pick-section p {
+    color: #fff; }
+
+.pick-trip__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #41ead466;
+  margin-bottom: 80px; }
+  .pick-trip__list li {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+    position: relative;
+    padding: 20px; }
+    .pick-trip__list li.active:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #41EAD4;
+      border-radius: 13px;
+      position: absolute;
+      bottom: -1px;
+      left: 0; }
+
+.pick-trip__content {
+  margin: 30px 0;
+  padding: 15px 0;
+  display: flex;
+  position: relative; }
+  .pick-trip__content h4, .pick-trip__content p {
+    color: #fff;
+    margin-bottom: 40px; }
+  .pick-trip__content h4 {
+    font-size: 65px;
+    line-height: 1; }
+  .pick-trip__content p {
+    font-size: 17px;
+    line-height: 1.6; }
+  .pick-trip__content svg.dots {
+    position: absolute;
+    bottom: -39px;
+    left: -52px; }
+  .pick-trip__content .trip_text {
+    flex: 48%;
+    max-width: 48%;
+    position: relative; }
+  .pick-trip__content .trip_images {
+    z-index: 99; }
+    .pick-trip__content .trip_images .trip_img {
+      margin-right: 100px; }
+      .pick-trip__content .trip_images .trip_img img {
+        border-radius: 9px;
+        width: 100%;
+        height: 100%; }
+    .pick-trip__content .trip_images .trip_img-title {
+      position: absolute;
+      top: 40%;
+      left: -3%; }
+    .pick-trip__content .trip_images .trip_num {
+      font-size: 24px;
+      color: #41EAD4;
+      margin-bottom: 15px;
+      position: relative; }
+      .pick-trip__content .trip_images .trip_num:after, .pick-trip__content .trip_images .trip_num:before {
+        top: -20px;
+        background: #41EAD4; }
+      .pick-trip__content .trip_images .trip_num:after {
+        width: 2px;
+        height: 16px;
+        left: 4px; }
+      .pick-trip__content .trip_images .trip_num:before {
+        width: 115px;
+        height: 2px;
+        left: 4px; }
+    .pick-trip__content .trip_images .trip_title-text {
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 2px;
+      max-width: 300px;
+      color: #fff; }
