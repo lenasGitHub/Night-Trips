@@ -65,9 +65,9 @@ export function TripLists({tripsList, tripsContent}) {
                                         <Slider {...settings}>
                                             <img src={`/assets/images/${c.image}`} alt={'trip'} width="430"
                                                  height="550"/>
-                                            <img src={`/assets/images/trip-2-min.png`} alt={'trip'} width="430"
+                                            <img src={`/assets/images/trip-2-min.webp`} alt={'trip'} width="430"
                                                  height="550"/>
-                                            <img src={`/assets/images/trip-4-min.png`} alt={'trip'} width="430"
+                                            <img src={`/assets/images/trip-4-min.webp`} alt={'trip'} width="430"
                                                  height="550"/>
                                         </Slider>
                                     </div>
