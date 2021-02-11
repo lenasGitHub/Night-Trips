@@ -1,6 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+import {useOnOutsideClick} from "../helper/useOnOutsideClick";
+
+import Sidebar from "../layout/Sidebar";
 
 export function TripNav() {
+    const [sidebar, setSidebar] = useState(false);
+
+    const { innerBorderRef } = useOnOutsideClick(() => {
+        setSidebar(false)
+    })
     return (
         <nav>
             <div className="container container--flex-center">
@@ -14,9 +23,17 @@ export function TripNav() {
                         <path d="M21 21L16.65 16.65" stroke="white" strokeWidth="2" strokeLinecap="round"
                               strokeLinejoin="round"/>
                     </svg>
-                    <button className={'night-trip__button night-trip__button--with-stoke menu__button'}>MENU
+
+                    <button  className={'night-trip__button night-trip__button--with-stoke menu__button'} onClick={() => setSidebar(!sidebar)}>MENU
                     </button>
                 </div>
+            </div>
+
+            <div ref={innerBorderRef}>
+                <Sidebar
+                    show={sidebar}
+                    key="sidebar"
+                />
             </div>
         </nav>
     )

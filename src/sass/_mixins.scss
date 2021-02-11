@@ -12,6 +12,9 @@
     @else if $point == mobile {
         @media (max-width: 670px) { @content; }
     }
+    @else if $point == portrait-bettween-1200-1024 {
+        @media (max-width:1200px) and (min-width:1024px) { @content; }
+    }
     @else{
         @media (max-width: $point) { @content; }
     }

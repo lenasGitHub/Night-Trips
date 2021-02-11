@@ -14,8 +14,13 @@
       font-size: 120px;
       line-height: 153px;
 
+      @include breakpoint( portrait-bettween-1200-1024){
+        font-size: 100px;
+        line-height: unset
+      }
       @include breakpoint(tablet-large){
         font-size: 50px;
+        line-height: unset
       }
     }
 
@@ -99,7 +104,7 @@
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     @include breakpoint(mobile) {
-      min-width: 150px
+      min-width: 170px
     }
     &.active {
 
@@ -235,10 +240,24 @@
           justify-content: center;
           cursor: pointer;
 
+          @include breakpoint(tablet-large){
+            width: 45px;
+            height: 45px;
+          }
+          @include breakpoint(mobile){
+            width: 55px;
+            height: 55px;
+          }
           &--left{
             right: 65px;
             border-top-left-radius: 12px;
             border-right: 2px solid #13314982;
+            @include breakpoint(tablet-large){
+              right: 45px;
+            }
+            @include breakpoint(mobile){
+              right: 55px;
+            }
           }
           &--right{
             right: 0
@@ -289,6 +308,59 @@
           max-width: 300px;
           color: $white;
       }
+    }
+  }
+}
+
+.sidebar {
+  height: 100vh;
+  width: 370px;
+  border-radius: 4px;
+
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.25);
+  background: #011626;
+  opacity: .8;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 999999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  @include breakpoint(mobile){
+    opacity: 1;
+    width: 68%;
+  }
+  .night-trip__button{
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 70%;
+  }
+  &__item {
+    width: 75%;
+    margin: 10px auto 0;
+    text-align: center;
+
+    padding: 15px 0;
+
+    text-transform: uppercase;
+
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: #666666;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+    &:first-child {
+      margin-top: 0;
     }
   }
 }

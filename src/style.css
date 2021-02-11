@@ -34,7 +34,7 @@ header .night-trip__banner--bg-image {
 .night-trip__button {
   background: #00C9E0;
   border: 1px solid #00C9E0;
-  color: #fff;
+  color: #011626;
   box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
   font-size: 16px;
   border-radius: 9999px; }
@@ -346,9 +346,14 @@ nav {
 .night-trip__title h1 {
   font-size: 120px;
   line-height: 153px; }
+  @media (max-width: 1200px) and (min-width: 1024px) {
+    .night-trip__title h1 {
+      font-size: 100px;
+      line-height: unset; } }
   @media (max-width: 1024px) {
     .night-trip__title h1 {
-      font-size: 50px; } }
+      font-size: 50px;
+      line-height: unset; } }
 
 .night-trip__title h1, .night-trip__title h2 {
   margin-bottom: 20px; }
@@ -413,7 +418,7 @@ nav {
     transition: all 0.3s ease-in-out; }
     @media (max-width: 670px) {
       .pick-trip__list li {
-        min-width: 150px; } }
+        min-width: 170px; } }
     .pick-trip__list li.active {
       font-size: 17px;
       color: #00C9E0;
@@ -516,10 +521,24 @@ nav {
         align-items: center;
         justify-content: center;
         cursor: pointer; }
+        @media (max-width: 1024px) {
+          .pick-trip__content .trip_images .trip_img_arrow {
+            width: 45px;
+            height: 45px; } }
+        @media (max-width: 670px) {
+          .pick-trip__content .trip_images .trip_img_arrow {
+            width: 55px;
+            height: 55px; } }
         .pick-trip__content .trip_images .trip_img_arrow--left {
           right: 65px;
           border-top-left-radius: 12px;
           border-right: 2px solid #13314982; }
+          @media (max-width: 1024px) {
+            .pick-trip__content .trip_images .trip_img_arrow--left {
+              right: 45px; } }
+          @media (max-width: 670px) {
+            .pick-trip__content .trip_images .trip_img_arrow--left {
+              right: 55px; } }
         .pick-trip__content .trip_images .trip_img_arrow--right {
           right: 0; }
     .pick-trip__content .trip_images .trip_img-title {
@@ -551,3 +570,42 @@ nav {
       letter-spacing: 2px;
       max-width: 300px;
       color: #fff; }
+
+.sidebar {
+  height: 100vh;
+  width: 370px;
+  border-radius: 4px;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.25);
+  background: #011626;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; }
+  @media (max-width: 670px) {
+    .sidebar {
+      opacity: 1;
+      width: 68%; } }
+  .sidebar .night-trip__button {
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 70%; }
+  .sidebar__item {
+    width: 75%;
+    margin: 10px auto 0;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #666666;
+    font-weight: bold;
+    letter-spacing: 1px; }
+    .sidebar__item:first-child {
+      margin-top: 0; }
