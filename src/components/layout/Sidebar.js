@@ -15,7 +15,6 @@ export default ({show}) => {
             transform: "translateY(-100%)"
         },
         unique: true,
-        config: config.stiff,
         ref: sidebarRef
     });
 
