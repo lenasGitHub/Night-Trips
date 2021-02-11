@@ -6,8 +6,11 @@
     @if $point == desktop {
         @media (min-width: 641px) { @content; }
     }
+    @else if $point == desktop-small {
+        @media (min-width: 1024px) { @content; }
+    }
     @else if $point == tablet-large {
-        @media (max-width: 1024px) { @content; }
+        @media (max-width: 1400px) { @content; }
     }
     @else if $point == mobile {
         @media (max-width: 670px) { @content; }

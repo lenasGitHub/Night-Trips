@@ -9,28 +9,30 @@
   }
 
   &__title {
-   @extend %absolute-middle;
+    @extend %absolute-middle;
+
     h1 {
       font-size: 120px;
       line-height: 153px;
 
-      @include breakpoint( portrait-bettween-1200-1024){
+      @include breakpoint(portrait-bettween-1200-1024) {
         font-size: 100px;
         line-height: unset
       }
-      @include breakpoint(tablet-large){
+      @include breakpoint(tablet-large) {
         font-size: 50px;
         line-height: unset
       }
     }
 
-    h1, h2{
-      margin-bottom:20px;
+    h1, h2 {
+      margin-bottom: 20px;
     }
 
-    h2{
+    h2 {
       font-size: 18px;
     }
+
     p {
       font-size: 17px;
       margin-top: 30px;
@@ -44,16 +46,17 @@
   &__pick-section {
     background-color: #011627;
     padding: 3rem 0;
+    position: relative;
 
     h3 {
       font-size: 72px;
       margin-right: 20px;
 
-      @include breakpoint(mobile){
+      @include breakpoint(mobile) {
         font-size: 40px;
         margin: 0 0 20px;
       }
-      @include breakpoint(tablet-large){
+      @include breakpoint(tablet-large) {
         font-size: 35px;
       }
     }
@@ -61,7 +64,8 @@
     p.trip-pick-text {
       font-size: 16px;
       margin: 0 20px 0 30px;
-      max-width: 350px;
+      max-width: 365px;
+      line-height: 1.6;
       @include breakpoint(mobile) {
         max-width: 350px;
         text-align: center;
@@ -87,12 +91,13 @@
   @include breakpoint(mobile) {
     margin-bottom: 0;
 
-    -webkit-box-align: center!important;
-    display: flex!important;
-    align-items: center!important;
-    overflow: auto!important;
-    scroll-snap-type: x mandatory!important;
+    -webkit-box-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: auto !important;
+    scroll-snap-type: x mandatory !important;
   }
+
   li {
     font-size: 16px;
     text-align: center;
@@ -106,11 +111,13 @@
     @include breakpoint(mobile) {
       min-width: 170px
     }
+
     &.active {
 
       font-size: 17px;
       color: $primaryColor;
       opacity: 1;
+
       &:after {
         content: "";
         display: block;
@@ -133,14 +140,15 @@
 
   position: relative;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     flex-direction: column-reverse
   }
+
   h4, p {
     color: $white;
     margin-bottom: 40px;
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       margin-bottom: 30px;
     }
   }
@@ -149,7 +157,7 @@
     font-size: 65px;
     line-height: 1;
 
-    @include breakpoint(tablet-large){
+    @include breakpoint(tablet-large) {
       font-size: 48px;
     }
   }
@@ -164,7 +172,7 @@
     bottom: -39px;
     left: -52px;
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       display: none
     }
   }
@@ -175,7 +183,7 @@
       max-width: 48%;
       position: relative;
 
-      @include breakpoint(mobile){
+      @include breakpoint(mobile) {
         flex: 100%;
         max-width: 100%;
 
@@ -198,6 +206,7 @@
         max-width: 440px;
         margin: auto;
       }
+
       .trip_img {
         margin-right: 100px;
         min-width: 430px;
@@ -206,7 +215,7 @@
         border-radius: 9px;
 
         position: relative;
-        @include breakpoint(tablet-large){
+        @include breakpoint(tablet-large) {
           min-width: unset;
           min-height: unset;
 
@@ -214,7 +223,7 @@
 
           margin-right: 50px;
         }
-        @include breakpoint(mobile){
+        @include breakpoint(mobile) {
           min-width: 350px;
           min-height: 100%;
           max-width: 350px;
@@ -222,6 +231,7 @@
           display: block;
           overflow: hidden;
         }
+
         img {
           border-radius: 9px;
           width: 100%;
@@ -234,32 +244,36 @@
           background: #011627;
           box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
           position: absolute;
-          bottom: 0;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
 
-          @include breakpoint(tablet-large){
+          bottom: 0;
+          z-index: 999;
+
+          @include breakpoint(tablet-large) {
             width: 45px;
             height: 45px;
           }
-          @include breakpoint(mobile){
+          @include breakpoint(mobile) {
             width: 55px;
             height: 55px;
           }
-          &--left{
+
+          &--right {
             right: 65px;
             border-top-left-radius: 12px;
             border-right: 2px solid #13314982;
-            @include breakpoint(tablet-large){
+            @include breakpoint(tablet-large) {
               right: 45px;
             }
-            @include breakpoint(mobile){
+            @include breakpoint(mobile) {
               right: 55px;
             }
           }
-          &--right{
+
+          &--left {
             right: 0
 
           }
@@ -270,43 +284,51 @@
         position: absolute;
         top: 40%;
         left: -3%;
-        @include breakpoint(mobile){
+
+        @include breakpoint(desktop-small) {
+          left: -18%;
+        }
+        @include breakpoint(mobile) {
           left: -10%;
         }
 
       }
 
-      .trip_num{
+      .trip_num {
         font-size: 24px;
         color: #41EAD4;
         margin-bottom: 15px;
 
         position: relative;
-        &:after, &:before{
+
+        &:after, &:before {
           @extend %after;
           top: -20px;
           background: #41EAD4;
         }
 
-        &:after{
+        &:after {
           width: 2px;
           height: 16px;
           left: 4px;
         }
-        &:before{
+
+        &:before {
           width: 115px;
           height: 2px;
           left: 4px;
         }
       }
-      .trip_title-text{
 
-          font-size: 24px;
-          line-height: 150%;
-          letter-spacing: 2px;
+      .trip_title-text {
 
-          max-width: 300px;
-          color: $white;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 2px;
+
+        max-width: 300px;
+        color: $white;
+        font-weight: 600;
       }
     }
   }
@@ -331,15 +353,17 @@
   align-items: center;
   padding-top: 50px;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     opacity: 1;
     width: 68%;
   }
-  .night-trip__button{
+
+  .night-trip__button {
     margin-bottom: 20px;
     text-align: center;
     min-width: 70%;
   }
+
   &__item {
     width: 75%;
     margin: 10px auto 0;
@@ -362,5 +386,32 @@
     &:first-child {
       margin-top: 0;
     }
+  }
+}
+
+#svg1{
+  top: 0;
+  left: 0;
+}
+#svg1, #svg2, #svg3 {
+  position: absolute;
+  height: 100%;
+}
+
+#svg3{
+  right: 0;
+  bottom: 0;
+}
+
+#svg2{
+  top: 0;
+  right: 0;
+}
+
+.slick-slider.slick-initialized {
+  width: 425px;
+
+  @include breakpoint(tablet-large) {
+    width: 100%;
   }
 }
