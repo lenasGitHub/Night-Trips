@@ -282,14 +282,15 @@
 
       .trip_img-title {
         position: absolute;
-        top: 40%;
+        top: 25px;
         left: -3%;
 
         @include breakpoint(desktop-small) {
           left: -18%;
+          top: 40%;
         }
         @include breakpoint(mobile) {
-          left: -10%;
+          left: 0;
         }
 
       }

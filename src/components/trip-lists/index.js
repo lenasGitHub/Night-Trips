@@ -15,9 +15,8 @@ import {ArrowRightSvg} from "../../svg/arrow-right";
 function SampleNextArrow(props) {
     const {onClick} = props
     return (
-        <button className='trip_img_arrow trip_img_arrow--left' onClick={onClick}>
+        <button className='trip_img_arrow trip_img_arrow--left' onClick={onClick} aria-label={'arrow-right'}>
             <ArrowRightSvg/>
-
         </button>
     )
 }
@@ -25,7 +24,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
     const {onClick} = props
     return (
-        <button className='trip_img_arrow trip_img_arrow--right' onClick={onClick}>
+        <button className='trip_img_arrow trip_img_arrow--right' onClick={onClick} aria-label={'arrow-left'}>
             <ArrowLeftSvg/>
 
         </button>

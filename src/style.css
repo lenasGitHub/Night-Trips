@@ -643,14 +643,15 @@ nav {
           right: 0; }
     .pick-trip__content .trip_images .trip_img-title {
       position: absolute;
-      top: 40%;
+      top: 25px;
       left: -3%; }
       @media (min-width: 1024px) {
         .pick-trip__content .trip_images .trip_img-title {
-          left: -18%; } }
+          left: -18%;
+          top: 40%; } }
       @media (max-width: 670px) {
         .pick-trip__content .trip_images .trip_img-title {
-          left: -10%; } }
+          left: 0; } }
     .pick-trip__content .trip_images .trip_num {
       font-size: 24px;
       color: #41EAD4;
