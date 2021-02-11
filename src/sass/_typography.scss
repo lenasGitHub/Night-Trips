@@ -3,7 +3,6 @@
     @extend %button-primary;
     padding: 14px 30px;
     min-width: 125px;
-
     position: relative;
 
 
@@ -11,18 +10,17 @@
       color: #021727;
     }
     &--with-stoke{
-
       transition: all 10s cubic-bezier(0.890, -0.170, 0.140, 1.225);
       &:after{
         content: "";
+        display: block;
         position: absolute;
         width: 30px;
-        height: 4px;
+        height: 2px;
         background-color: #FFFFFF;
         border-radius: 16px;
         right: -16px;
         top: 50%;
-        display: block;
       }
       &:hover:after{
         right: -10px;
@@ -40,4 +38,9 @@
       display: none;
     }
   }
+}
+
+.offer__button{
+  font-size: 14px !important;
+  padding: 18px 38px !important
 }

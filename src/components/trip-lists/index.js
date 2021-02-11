@@ -25,6 +25,20 @@ export function TripLists({tripsList, tripsContent}) {
                                 <div className={'trip_images'}>
                                     <div className={'trip_img'}>
                                         <img src={`/assets/images/${c.image}`} alt={'trip'} width="430" height="550"/>
+
+                                        <div className={'trip_img_arrow trip_img_arrow--left'}>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12L5 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M12 19L5 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div className={'trip_img_arrow trip_img_arrow--right'}>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 12L19 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M12 19L19 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+
                                     </div>
                                     <div className={'trip_img-title'}>
                                         <div className={'trip_num'}>{c.number}</div>
@@ -34,8 +48,8 @@ export function TripLists({tripsList, tripsContent}) {
                                 <div className={'trip_text'}>
                                     <h4>{c.title}</h4>
                                     <p>{c.desc}</p>
-                                    <button className={'night-trip__button night-trip__button--block night-trip__button--with-stoke'}>SEE OUR
-                                        LATEST OFFER
+                                    <button className={'night-trip__button night-trip__button--block night-trip__button--with-stoke offer__button'}>
+                                        SEE OUR LATEST OFFER
                                     </button>
                                 </div>
                             </Fragment>

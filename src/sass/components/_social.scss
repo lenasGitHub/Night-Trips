@@ -19,7 +19,7 @@
     @extend %absolute-bottom;
     left: 0;
     bottom: 64px;
-
+    margin-left: -75px;
     @include breakpoint(mobile) {
      display: none
     }
